@@ -1,0 +1,16 @@
+name: "Abil N George"
+description: "My Personal Website"
+title: "Abil N George"
+#url: "[YOUR DOMAIN]"
+
+paginate: 10
+
+markdown: redcarpet
+permalink: pretty
+pygments: true
+
+
+CSS_PATH: /css/
+JS_PATH: /js/
+IMAGE_PATH: /image/
+FONT_PATH: /fonts/

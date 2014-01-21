@@ -1,0 +1,99 @@
+{% if page.path == "blog.html" or page.path == "blog.md" %}
+{% assign post = site.posts.first %}
+{% assign content = post.content %}
+{% assign tags = post.tags %}
+{% endif %}
+
+{% include header.html %}
+<body class="left-sidebar">
+
+  <!-- Header -->
+  <div id="header">
+
+    <!-- Inner -->
+    <div class="inner">
+      <header>
+	<h1><a href="#" id="logo">Welcome to My Blog</a></h1>
+      </header>
+    </div>
+    
+    <!-- Nav -->
+    {% include nav.html %}
+
+  </div>
+  
+  <!-- Main -->
+  <div class="wrapper style1">
+
+    <div class="container">
+      <div class="row">
+	<div class="4u" id="sidebar">
+	  <hr class="first" />
+	  <section>
+	    <header>
+	      <h3><a href="#">Latest Posts</a></h3>
+	    </header>
+	    <p>
+	      {% for post in site.posts %}
+      	      <li>
+      		<span>{{ post.date | date_to_string }}</span> &raquo;
+      		<a href="{{ post.url }}">{{ post.title }}</a>
+      	      </li>
+      	      {% if post.index > 20%}
+      	      {% break %}
+      	      {% endif %}
+    	      {% endfor %}
+	    </p>
+	    <footer>
+	      <a href="#" class="button">More</a>
+	    </footer>
+	  </section>
+	  <hr />
+	</div>
+	<div class="8u skel-cell-important" id="content">
+	  <article id="main">
+	    <header>
+	      {% if page.title %}
+    	      <h2><a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a></h2>
+	      {% endif %}
+	      {% if post.title %}
+	      <h2><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
+	      {% endif %}
+	      <span class="byline">
+	      </span>
+	    </header>
+	    <section>
+	      {{ content }}
+	    </section>
+	    <section>
+	      {% for tag in post.tags %}
+	      {% if tag.index == 1 %}
+	      tags:
+	      {% endif %} 
+	      {{tag}}
+	      {% endfor %}
+	    </section>
+	  </article>
+	</div>
+      </div>
+      <hr />
+    </div>
+  </div>
+
+
+
+  <div id="footer">
+    <div class="container">
+      <hr>
+      <div class="row">
+	<div class="12u">
+	  
+	  {% include footer.html %}			
+	  
+	</div>
+	
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<div id="gallery" class="dummy"> </div>
+<article class="container box style2">
+  <header>
+    <h2>Gallery</h2>
+    <p>Sorry ,I am adding contents to my pages</p>
+    <div class="inner gallery">
+      {% for img in page.gallery_images %}
+      {% cycle '<div class="row flush">',nill,nill,nill %} 
+	<div class="3u">
+	  <a href="{{ relative }}/{{ img.full }}" class="image full">
+	    <img src="{{ relative }}/{{ img.thumbs }}" alt="{{ img.name }}" title="{{ img.name }}" />
+	  </a>
+	</div>
+	{% cycle nill,nill,nill,'</div>' %} 
+      {% endfor %}
+      {% cycle 'nill,'</div>','</div>', '</div>' %}
+</div>
+<div>
+  <span style="text-align: right;float: right;"><a href="#">More...</a><a></a></span>
+</div>
+</header>
+</article>
