@@ -22,34 +22,12 @@
     <div class="container">
       <div class="row">
 	<div class="12u skel-cell-important" id="content">
-	  <article id="main">
-	    <header>
-	      <h2><a href="#"></a>Archive</h2>
-	      <span class="byline">
-	      </span>
-	    </header>
-	    <section>
-	      <ul class="post-archive">
-		{% for post in site.posts %}
-		<li class="post-archive-item">
-		  <a href="{{ post.url }}">
-		    <span class="title">{{ post.title }}</span>
-                    <span class="date">{{ post.date | date: '%m/%Y' }}</span>
-		  </a>
-                </li>
-		{% endfor %}
-              </ul>
-	    </section>
-	    <section>
-	    </section>
-	  </article>
+	   {{ content }}
 	</div>
       </div>
       <hr />
     </div>
     
-
-
   <div id="footer">
     <div class="container">
       <hr>

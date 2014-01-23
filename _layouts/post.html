@@ -2,6 +2,8 @@
 {% assign post = site.posts.first %}
 {% assign content = post.content %}
 {% assign tags = post.tags %}
+{% else %}
+{% assign tags = page.tags %}
 {% endif %}
 
 {% include header.html %}
@@ -57,7 +59,7 @@
     	      <h2><a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a></h2>
 	      {% endif %}
 	      {% if post.title %}
-	      <h2><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
+	          <h2><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
 	      {% endif %}
 	      <span class="byline">
 	      </span>
@@ -66,9 +68,13 @@
 	      {{ content }}
 	    </section>
 	    <section style="text-align:right;">
-	      {% if post.tags != null %}
-	      tags: <span>{{ post.tags | array_to_sentence_string }}</span>
-	      {% endif %}
+	    <ul class="tags cf">
+	    	{% for tag in tags %}
+      		<li><a href="/search.html?tags={{tag}} "> {{tag}}</a>
+      		</li>
+            {% endfor %}
+        </ul>
+
 	    </section>
 	  </article>
 	</div>

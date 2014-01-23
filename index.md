@@ -18,8 +18,15 @@ gallery_images:
   - { name: "test", thumbs: "images/thumbs/07.jpg", full: "images/fulls/07.jpg" }
   - { name: "test", thumbs: "images/thumbs/08.jpg", full: "images/fulls/08.jpg" }
 contacts:
-   - type: "email" 
-     val:
-      - "abilngeorge@gmail.com"
-      - "abilng@cse.iitm.ac.in"
+  - type: "email" 
+    val:
+      - "<a href=\"mailto:abilngeorge@gmail.com\">abilngeorge@gmail.com</a>"
+      - "<a href=\"mailto:abilng@cse.iitm.ac.in\">abilng@cse.iitm.ac.in</a>"
+  - type: "GitHub"
+    val:
+      - "<a href=\"http://github.com/abilng\">abilng</a>"
+  - type: "Twitter"
+    val:
+      - "<a href=\"http://twitter.com/abilngeorge\">@abilngeorge</a>"
+
 ---

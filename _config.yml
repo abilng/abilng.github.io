@@ -26,9 +26,19 @@ description: |
 
     If you'd like to find out more about what Abil has been upto, you can do so through the following channels:
 
-sites:
-    - link: "http://github.com/abil"
+links:
+    github:
+      link: "http://github.com/abilng"
       text: "abilng on GitHub"
-
-    - link: "http://twitter.com/abilngeorge"
+    twitter:  
+      link: "http://twitter.com/abilngeorge"
       text: "@abilngeorge on Twitter"
+    facebook:  
+      link: "http://facebook.com/abilngeorge"
+      text: "abilngeorge on Facebook"
+    linkedin:  
+      link: "http://in.linkedin.com/pub/abil-n-george/4b/21a/770"
+      text: "abilngeorge on Linked-in"
+    google:  
+      link: "https://profiles.google.com/AbilNGeorge"
+      text: "abilngeorge on Google+"

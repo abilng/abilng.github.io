@@ -1735,5 +1735,41 @@ padding: 6em 0 0 0;
 }
 .post-archive .title {
     color: olivedrab;
-    float: left;
+    /*float: left;*/
+}
+
+/*************************************
+tags
+**************************************/
+.tags {
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.8em;
+  display: inline-flex;
+}
+.tags li {
+  float: left;
+  margin: 0 7px;
+}
+
+.tags li a {
+  padding: 1px 12px 2px 12px;
+  background: #eaeff0;
+  color: #5e6d74;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.tags li a:hover {
+  /* shrink the padding to compensate for the border */
+  padding: 0 11px 1px 11px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tags li a:active {
+  position: relative;
+  top: 1px;
 }
