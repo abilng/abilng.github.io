@@ -1,0 +1,67 @@
+{% include header.html %}
+<body class="left-sidebar">
+
+  <!-- Header -->
+  <div id="header">
+    
+    <!-- Inner -->
+    <div class="inner">
+      <header>
+	<h1><a href="#" id="logo">Welcome to My Blog</a></h1>
+      </header>
+    </div>
+    
+    <!-- Nav -->
+    {% include nav.html %}
+    
+  </div>
+  
+  <!-- Main -->
+  <div class="wrapper style1">
+    
+    <div class="container">
+      <div class="row">
+	<div class="12u skel-cell-important" id="content">
+	  <article id="main">
+	    <header>
+	      <h2><a href="#"></a>Archive</h2>
+	      <span class="byline">
+	      </span>
+	    </header>
+	    <section>
+	      <ul class="post-archive">
+		{% for post in site.posts %}
+		<li class="post-archive-item">
+		  <a href="{{ post.url }}">
+		    <span class="title">{{ post.title }}</span>
+                    <span class="date">{{ post.date | date: '%m/%Y' }}</span>
+		  </a>
+                </li>
+		{% endfor %}
+              </ul>
+	    </section>
+	    <section>
+	    </section>
+	  </article>
+	</div>
+      </div>
+      <hr />
+    </div>
+    
+
+
+  <div id="footer">
+    <div class="container">
+      <hr>
+      <div class="row">
+	<div class="12u">
+	  
+	  {% include footer.html %}			
+	  
+	</div>
+	
+      </div>
+    </div>
+  </div>
+</body>
+</html>

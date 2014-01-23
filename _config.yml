@@ -1,16 +1,34 @@
-name: "Abil N George"
-description: "My Personal Website"
-title: "Abil N George"
-#url: "[YOUR DOMAIN]"
+safe: true
+debug: true
+permalink: /post/:title
+exclude: ["rakefile", "_config.yml", "addpost.sh", "addpage.sh", ".gitignore"]
 
-paginate: 10
-
-markdown: redcarpet
-permalink: pretty
-pygments: true
-
-
+BASE_PATH: "/"
 CSS_PATH: /css/
 JS_PATH: /js/
 IMAGE_PATH: /image/
 FONT_PATH: /fonts/
+lsi: false
+
+pygments: true
+markdown: redcarpet
+
+url: http://abilng.github.io
+name: "Personal Site -Abil"
+author: "Abil N George"
+title: "Abil N G"
+description: |
+    This is the site/blog of Abil N George, a CSE grauate student of IIT Madras.
+
+    Mostly containing tech-related musings, and any other miscellany that Abil finds interesting.
+
+    Crafted in SublimeText 2, powered by Jekyll, and hosted by GitHub Pages.
+
+    If you'd like to find out more about what Abil has been upto, you can do so through the following channels:
+
+sites:
+    - link: "http://github.com/abil"
+      text: "abilng on GitHub"
+
+    - link: "http://twitter.com/abilngeorge"
+      text: "@abilngeorge on Twitter"

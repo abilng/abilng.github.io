@@ -703,6 +703,7 @@ table.default tbody
     text-align: center;
 }
 
+
 /*********************************************************************************/
 /* Icons                                                                         */
 /* Powered by Font Awesome by Dave Gandy | http://fontawesome.io                 */
@@ -1435,6 +1436,7 @@ table.default tbody
 
 .wrapper.style1
 {
+padding: 6em 0 0 0;
 }
 
 .wrapper.style2
@@ -1725,4 +1727,13 @@ table.default tbody
 .poptrox-popup:hover .closer:hover
 {
     opacity: 1.0;
+}
+
+.post-archive .date {
+    float: right;
+    color: gray;
+}
+.post-archive .title {
+    color: olivedrab;
+    float: left;
 }
