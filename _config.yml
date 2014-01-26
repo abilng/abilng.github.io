@@ -1,6 +1,6 @@
 safe: true
 debug: true
-permalink: /post/:title
+#permalink: /post/:title
 exclude: ["rakefile", "_config.yml", "addpost.sh", "addpage.sh", ".gitignore"]
 
 BASE_PATH: "/"
