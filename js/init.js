@@ -157,6 +157,9 @@ jQuery(function() {
     _isTouch = !!('ontouchstart' in window),
     _isMobile = !!(navigator.userAgent.match(/(iPod|iPhone|iPad|Android|IEMobile)/));
 
+
+    //$(".scrollContainer").customScrollbar({updateOnWindowResize: true});
+
     // Scrolly links
     $('.scrolly').n33_scrolly(function() {
 	return (skel.isActive('mobile') ? 70 : 190);
@@ -193,7 +196,7 @@ jQuery(function() {
 	    }
 	}
     }
-    
+	$(".scrollContainer").customScrollbar({updateOnWindowResize: true});    
     // Parallax Background
     if (_settings.useParallax)
     {
@@ -262,5 +265,10 @@ jQuery(function() {
         frame = $(window).scrollTop()/$(document).height() *100
         $('#nav').css('background-position', '50% ' + frame + '%');
     });
+
     
 });
+
+/*$(document).ready(function() {
+  $(".container").customScrollbar();
+});*/

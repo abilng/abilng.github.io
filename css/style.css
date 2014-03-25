@@ -1278,10 +1278,15 @@ table.default tbody
     width: 100%;
     text-align: center;
     padding: 1.5em 0 1.5em 0;
-    z-index: 1;
+    z-index: 10;
     overflow: hidden;
+    /*background-image: url('../images/header.jpg');*/
 }
-
+.homepage #nav
+{
+    position: fixed;
+    background:rgba(255,255,255,0.10);
+}
 .ready #nav {
     z-index: 10;
     position: fixed;
