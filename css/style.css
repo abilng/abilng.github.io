@@ -319,6 +319,15 @@ ul.default li:first-child
     margin-top: 0;
 }
 
+.post ul
+{
+    list-style-type: circle;
+}
+.post ol
+{
+    list-style-type: square;
+}
+
 /* Forms */
 
 form
@@ -1752,10 +1761,12 @@ tags
   list-style-type: none;
   font-size: 0.8em;
   display: inline-flex;
+
 }
 .tags li {
   float: left;
   margin: 0 7px;
+  list-style-type: none;
 }
 
 .tags li a {
