@@ -19,7 +19,7 @@ $ tar -xvzf HTK-3.4.1.tar.gz
 3. Compile and Install
 
 {% highlight bash %}
-cd HTK-*/
+$ cd HTK-*/
 {% endhighlight %}
 
 *	If you have 32 bit system
