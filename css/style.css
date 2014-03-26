@@ -1778,3 +1778,44 @@ tags
   position: relative;
   top: 1px;
 }
+
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+html {
+    overflow: auto;
+}
+body.left-sidebar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 0px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body.homepage {
+/*    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 0px; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+*/
+}

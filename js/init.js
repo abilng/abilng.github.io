@@ -196,7 +196,6 @@ jQuery(function() {
 	    }
 	}
     }
-	$(".scrollContainer").customScrollbar({updateOnWindowResize: true});    
     // Parallax Background
     if (_settings.useParallax)
     {
