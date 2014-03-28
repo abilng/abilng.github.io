@@ -3,12 +3,12 @@
     {% if page.path == "index.html" or page.path == "index.md" %}
     <li><a href="#" class="scrolly scrolly-centered">Home</a></li>
     <li><a href="#gallery" class="scrolly scrolly-centered">Gallery</a></li>
-    <li><a href="blog.html" class="scrolly scrolly-centered">Blog</a></li>
+    <li><a href="blog/" class="scrolly scrolly-centered">Blog</a></li>
     <li><a href="#contact" class="scrolly scrolly-centered" >Contact</a></li>
     {% else %}
     <li><a href="{{ relative }}/index.html" class="scrolly scrolly-centered">Home</a></li>
     <li><a href="{{ relative }}/index.html#gallery" class="scrolly scrolly-centered">Gallery</a></li>
-    <li><a href="{{ relative }}/blog.html" class="scrolly scrolly-centered">Blog</a></li>
+    <li><a href="{{ relative }}/blog/" class="scrolly scrolly-centered">Blog</a></li>
     <li><a href="{{ relative }}/index.html#contact" class="scrolly scrolly-centered" >Contact</a></li>
     {% endif %}
 
