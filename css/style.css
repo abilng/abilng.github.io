@@ -1251,7 +1251,7 @@ table.default tbody
     bottom: -4.5em;
     margin-left: -45px;
     margin-bottom: -33px;
-    background: url('images/arrow.svg') no-repeat;
+    background: url('../images/arrow.svg') no-repeat;
 }
 
 .homepage #header .overlay
@@ -1867,7 +1867,7 @@ code {
     padding: .8em !important;
     overflow-x: auto;
     line-height: 1.45em;
-    background: #002b36 url('/images/noise.png?1352703182') top left !important;
+    background: #002b36 url('../images/noise.png') top left !important;
     color: #93a1a1 !important;
     font-family: 'Inconsolata' monospace;    
 }
