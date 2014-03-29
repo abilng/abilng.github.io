@@ -1,7 +1,26 @@
 @charset 'UTF-8';
 
-@font-face{font-family:'FontAwesome';src:url('font/fontawesome-webfont.eot?v=4.0.1');src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
-
+@font-face{
+    font-family:'FontAwesome';
+    src:url('font/fontawesome-webfont.eot?v=4.0.1');
+    src:url('font/fontawesome-webfont.eot?#iefix&v=4.0.1')
+     format('embedded-opentype'),url('font/fontawesome-webfont.woff?v=4.0.1') format('woff'),
+     url('font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),
+     url('font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');
+    font-weight:normal;font-style:normal
+}
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata'), url(http://themes.googleusercontent.com/static/fonts/inconsolata/v7/BjAYBlHtW3CJxDcjzrnZCIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tangerine'), url(http://themes.googleusercontent.com/static/fonts/tangerine/v4/HGfsyCL5WASpHOFnouG-RD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
 /*
   Overflow 1.1 by HTML5 UP
   html5up.net | @n33co
@@ -321,10 +340,12 @@ ul.default li:first-child
 
 .post ul
 {
+    margin-left: 6%;
     list-style-type: circle;
 }
 .post ol
 {
+    margin-left: 5%;
     list-style-type: square;
 }
 
@@ -1829,4 +1850,30 @@ body.homepage {
     overflow-y: scroll;
     overflow-x: hidden;
 */
+}
+
+code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    padding: 2px 4px;
+    font-size: 75%;
+    border-radius: 4px;
+    font-family: Consolas, Menlo, "Liberation Mono", "Courier New", monospace;    
+}
+.highlight code{
+    overflow: scroll;
+    overflow-y: hidden;
+    display: block;
+    padding: .8em !important;
+    overflow-x: auto;
+    line-height: 1.45em;
+    background: #002b36 url('/images/noise.png?1352703182') top left !important;
+    color: #93a1a1 !important;
+    font-family: 'Inconsolata' monospace;    
+}
+
+.post-title {
+    font-family: 'Tangerine', cursive;
+    font-size: 150%;
+    text-shadow: 4px 4px 4px #aaa;    
 }

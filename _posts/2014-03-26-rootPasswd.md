@@ -15,17 +15,10 @@ This will take you to another screen where you can edit grub entry.
 * Go to line which begins with kernel  append  single to the end of that line . And then append _init=/bin/bash_ .So that now the line end with 
 > ...ro single init=/bin/bash
 
-* Once the system finishes booting, you will be logged in as root. But root file-system is mounted as read only mode.So we should remount it as r+w mode. This can be done by
-{% highlight bash %}
-mount -o remount,rw /
-{% endhighlight %}
+* Once the system finishes booting, you will be logged in as root. But root file-system is mounted as read only mode.So we should remount it as r+w mode. This can be done by {% highlight bash %} $ mount -o remount,rw / {% endhighlight %}
 
 * now set new password using __passwd__.
-* Again remount root file-system as read only (this is only for safety of file system).
-
-{% highlight ruby %}
-mount -o remount,ro /
-{% endhighlight %}
+* Again remount root file-system as read only (this is only for safety of file system). {% highlight bash %} $ mount -o remount,ro / {% endhighlight %}
 
 
 Note:
