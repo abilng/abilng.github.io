@@ -13,13 +13,13 @@
   font-family: 'Inconsolata';
   font-style: normal;
   font-weight: 400;
-  src: local('Inconsolata'), url(http://themes.googleusercontent.com/static/fonts/inconsolata/v7/BjAYBlHtW3CJxDcjzrnZCIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+  src: local('Inconsolata'), url('font/inconsolata.woff') format('woff');
 }
 @font-face {
   font-family: 'Tangerine';
   font-style: normal;
   font-weight: 400;
-  src: local('Tangerine'), url(http://themes.googleusercontent.com/static/fonts/tangerine/v4/HGfsyCL5WASpHOFnouG-RD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+  src: local('Tangerine'), url('font/tangerine.woff?') format('woff');
 }
 /*
   Overflow 1.1 by HTML5 UP
