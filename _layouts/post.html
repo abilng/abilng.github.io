@@ -42,6 +42,7 @@
 	      <h3><a href="#">Latest Posts</a></h3>
 	    </header>
 	    <p>
+	    <ul itemscope itemtype="http://schema.org/Blog" >
 	      {% for post in site.posts %}
       	      <li>
       		<span>{{ post.date | date_to_string }}</span> &raquo;
@@ -51,6 +52,7 @@
       	      {% break %}
       	      {% endif %}
     	      {% endfor %}
+    	</ul>
 	    </p>
 	    <footer>
 	      <a href="{{relative}}/archive.html" class="button">More..</a>
@@ -59,26 +61,30 @@
 	  <hr />
 	</div>
 	<div class="8u skel-cell-important post" id="content">
-	  <article id="main">
+	  <article id="main" itemscope itemType="http://schema.org/BlogPosting">
 	    <header>
 	      {% if page.title %}
-    	      <h2 class="post-title"><a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a></h2>
+    	      <h2 class="post-title"  itemprop="headline" ><a href="{{ root_url }}{{ page.url }}" itemprop="url" >{{ page.title }}</a></h2>
 	      {% endif %}
 	      {% if post.title %}
-	          <h2 class="post-title"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
+	          <h2 class="post-title"  itemprop="headline" ><a itemprop="url" href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
 	      {% endif %}
 	      <span class="byline"></span>
 	      <span>
-	      	<span>By: <a href="#">{{ author }}</a></span>
-	      	<span style="float: right;">{{ date | date_to_string }} </span>
+	      	<span itemprop="author">
+	      		<span itemscope itemtype="http://schema.org/Person">
+	      		By: <a rel="author" href="https://www.google.com/+AbilNGeorge" itemprop="name">{{ author }}</a>
+	      		</span>
+	      	</span>
+	      	<span style="float: right;" itemprop="datePublished" content="{{date}}">{{ date | date_to_string }} </span>
 	      </span>
 	      <span class="byline"></span>
 	    </header>
-	    <section>
+	    <section  itemprop="articleBody" >
 	      {{ content }}
 	    </section>
 	    <section style="text-align:right;">
-	    <ul class="tags cf">
+	    <ul class="tags cf" itemprop="keywords">
 	    	{% for tag in tags %}
       		<li><a href="/search.html?tags={{tag}} "> {{tag}}</a>
       		</li>
