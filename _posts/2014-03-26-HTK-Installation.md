@@ -3,6 +3,7 @@ layout: post
 title:  "HTK-Installation"
 tags: HTK Linux Speech
 date: 2014-03-26 17:41:25
+author: Abil N George
 category: blog
 ---
 

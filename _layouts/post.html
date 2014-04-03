@@ -3,7 +3,11 @@
 {% assign content = post.content %}
 {% assign tags = post.tags %}
 {% assign id = post.id %}
+{% assign date = post.date %}
+{% assign author = post.author %}
 {% else %}
+{% assign date = page.date %}
+{% assign author = page.author %}
 {% assign tags = page.tags %}
 {% assign id = page.id %}
 {% endif %}
@@ -63,8 +67,12 @@
 	      {% if post.title %}
 	          <h2 class="post-title"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
 	      {% endif %}
-	      <span class="byline">
+	      <span class="byline"></span>
+	      <span>
+	      	<span>By: <a href="#">{{ author }}</a></span>
+	      	<span style="float: right;">{{ date | date_to_string }} </span>
 	      </span>
+	      <span class="byline"></span>
 	    </header>
 	    <section>
 	      {{ content }}

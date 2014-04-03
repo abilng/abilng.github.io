@@ -2,6 +2,7 @@
 layout: post
 title:  "Root Password Reset: Linux"
 date: 2014-02-15 18:09:14
+author: Abil N George
 tags: linux passwd grub 
 category: blog
 ---

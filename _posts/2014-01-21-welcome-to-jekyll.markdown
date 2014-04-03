@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-01-21 14:04:05
 tags: jekyll update testPost
+author: Abil N George
 category: blog
 ---
 

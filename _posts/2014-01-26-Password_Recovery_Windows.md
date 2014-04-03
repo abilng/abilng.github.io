@@ -2,7 +2,8 @@
 layout: post
 title:  "Password Recovery: Windows 7"
 date: 2014-01-26 18:01:38
-tags: windows passwd 
+tags: windows passwd
+author: Abil N George 
 category: blog
 ---
 
