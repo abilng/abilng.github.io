@@ -13,20 +13,14 @@ lsi: false
 pygments: true
 markdown: redcarpet
 
-url: http://abilng.github.io
+url: http://www.abilng.in
 name: "Personal Site -Abil"
 author: "Abil N George"
-title: "Abil N G"
+title: "Abil N George"
 mail: "abilngeorge@gmail.com"
 description: |
-    This is the site/blog of Abil N George, a CSE grauate student of IIT Madras.
-
-    Mostly containing tech-related musings, and any other miscellany that Abil finds interesting.
-
-    Crafted in SublimeText 2, powered by Jekyll, and hosted by GitHub Pages.
-
-    If you'd like to find out more about what Abil has been upto, you can do so through the following channels:
-
+    This is the site/blog of Abil N George, a CSE grauate student of IIT Madras.Mostly containing tech-related musings, and any other miscellany that Abil finds interesting.
+    Crafted in SublimeText 2, powered by Jekyll, and hosted by GitHub Pages.If you'd like to find out more about what Abil has been upto, you can do so through the following channels
 links:
     github:
       link: "http://github.com/abilng"
