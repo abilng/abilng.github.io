@@ -25,7 +25,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
     <changefreq>{{ page.sitemap.changefreq }}</changefreq>
     <priority>{{ page.sitemap.priority }}</priority>
   </url>
-  {% elsif page.url != search.json and  page.url != search.html and  page.url != atom.xml and page.url != sitemap.xml  %}
+  {% elsif page.url != 'search.json' and  page.url != 'search.html' and  page.url != 'atom.xml' and page.url != 'sitemap.xml'  %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
     <priority>1</priority>
