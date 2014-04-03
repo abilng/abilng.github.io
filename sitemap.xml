@@ -7,27 +7,27 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
   {% for post in site.posts %}
   <url>
-    <loc>{{ site.baseurl }}{{ post.url }}</loc>
+    <loc>{{ site.url }}{{ post.url }}</loc>
     {% if post.lastmod == null %}
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     {% else %}
     <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
     {% endif %}
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.7</priority>
   </url>
   {% endfor %}
   {% for page in site.pages %}
   {% if page.sitemap != null and page.sitemap != empty %}
   <url>
-    <loc>{{ site.baseurl }}{{ page.url }}</loc>
+    <loc>{{ site.url }}{{ page.url }}</loc>
     <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
     <changefreq>{{ page.sitemap.changefreq }}</changefreq>
     <priority>{{ page.sitemap.priority }}</priority>
   </url>
-  {% else %}
+  {% elsif page.url != search.json and  page.url != search.html and  page.url != atom.xml and page.url != sitemap.xml  %}
   <url>
-    <loc>{{ site.baseurl }}{{ page.url }}</loc>
+    <loc>{{ site.url }}{{ page.url }}</loc>
     <priority>1</priority>
   </url>
   {% endif %}
