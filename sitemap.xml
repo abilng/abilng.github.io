@@ -5,6 +5,17 @@ layout: nil
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
+
+  <url>
+    <loc>{{ site.url }}/index.html</loc>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/blog/index.html</loc>
+    <priority>1</priority>
+  </url>
+
+  <!-- blog posts -->
   {% for post in site.posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
@@ -16,20 +27,5 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  {% endfor %}
-  {% for page in site.pages %}
-  {% if page.sitemap != null and page.sitemap != empty %}
-  <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
-    <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
-    <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-    <priority>{{ page.sitemap.priority }}</priority>
-  </url>
-  {% elsif page.url != 'search.json' and  page.url != 'search.html' and  page.url != 'atom.xml' and page.url != 'sitemap.xml'  %}
-  <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
-    <priority>1</priority>
-  </url>
-  {% endif %}
   {% endfor %}
 </urlset>
