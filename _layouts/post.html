@@ -70,12 +70,10 @@
 	          <h2 class="post-title"  itemprop="headline" ><a itemprop="url" href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
 	      {% endif %}
 	      <span class="byline"></span>
-	      <span>
-	      	<span itemprop="author">
-	      		By: 
+	      <span>By:
+	      	<span itemprop="author"> 
 	      		<span itemscope itemtype="http://schema.org/Person">
-	      		<a rel="author" href="https://www.google.com/+AbilNGeorge" itemprop="name">{{ author }}</a>
-	      		</span>
+	      		<a rel="author" href="https://www.google.com/+AbilNGeorge" itemprop="name">{{ author }}</a></span>
 	      	</span>
 	      	<span style="float: right;" itemprop="datePublished" content="{{date}}">{{ date | date_to_string }} </span>
 	      </span>
