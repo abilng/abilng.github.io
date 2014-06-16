@@ -33,10 +33,11 @@ $ sudo apt-get install libc6-dev-i386 libx11-dev
 $ linux32 bash
 $ ./configure --prefix=/opt/htk
 $ make all
-$ make Install
+$ sudo mkdir /opt/htk
+$ sudo make Install
 {% endhighlight %}
 
 4. Set '$PATH' {% highlight bash %}
- $ echo 'export $PATH=$PATH:/opt/htk/' >> ~/.bashrc
+ $ echo 'export PATH=$PATH:/opt/htk/' >> ~/.bashrc
 {% endhighlight %}
 
