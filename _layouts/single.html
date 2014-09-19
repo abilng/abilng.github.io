@@ -1,45 +1,31 @@
+<!DOCTYPE HTML>
+<html>
 {% include header.html %}
-<body class="left-sidebar">
+<body id="top">
 
-  <!-- Header -->
-  <div id="header">
-    
-    <!-- Inner -->
-    <div class="inner">
-      <header>
-	<h1><a href="#" id="logo">Welcome to My Blog</a></h1>
-      </header>
-    </div>
-    
-    <!-- Nav -->
-    {% include nav.html %}
-    
-  </div>
+{% include socialsection.html %}    
+
+{% include nav.html %}
+<!-- Start of Wrapper - the full width container -->
+<div class="wrapper">
+  <div class="container">
+    <!-- Title -->
+    <div class="parallax2">
+      <div class="content centered shadow" id="Astrolabos">
+        <h1 class="wow bounceInUp" data-wow-duration="2s">Astrolabos</h1>
+                    
+      </div><!-- End of Content -->
+    </div><!-- End of Parallax 2 Container -->
+
   
-  <!-- Main -->
-  <div class="wrapper style1">
-    
-    <div class="container">
-      <div class="row">
-	<div class="12u skel-cell-important" id="content">
-	   {{ content }}
-	</div>
-      </div>
-      <hr />
-    </div>
-    
-  <div id="footer">
-    <div class="container">
-      <hr>
-      <div class="row">
-	<div class="12u">
-	  
-	  {% include footer.html %}			
-	  
-	</div>
-	
+    <!-- Main -->
+    <div class="smokecontainer">
+      <div class="content">
+        {{ content }}
       </div>
     </div>
-  </div>
+    {% include footer.html %}
+  </div><!-- End of Container -->
+</div><!-- End of Wrapper -->
 </body>
 </html>
