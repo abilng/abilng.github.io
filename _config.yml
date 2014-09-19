@@ -10,7 +10,7 @@ IMAGE_PATH: /image/
 FONT_PATH: /fonts/
 lsi: false
 
-pygments: true
+highlighter: true
 markdown: redcarpet
 
 url: http://www.abilng.in

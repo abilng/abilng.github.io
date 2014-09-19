@@ -1,7 +1,7 @@
 ---
 layout: main
 description: ""
-name: "Abil"
+user: "Abil"
 intro: |
     I am currently a graduate student at the <a href="http://www.iitm.ac.in/‎">Indian Institute of Technology Madras</a>. <br/>
     I am doing masters in <a href="http://www.cse.iitm.ac.in/">Computer Science and Engineering</a>.I am interested in Machine Learning <br/>
