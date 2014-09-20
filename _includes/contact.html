@@ -1,0 +1,22 @@
+<div class="parallax2">
+</div>
+<!-- Start of Grey Container -->
+<div class="greycontainer" id="Contact">    <!-- Start of Content -->
+    <div class="content centered" id="Contact">        
+        <h2>Contact</h2>
+                <table class="wow fadeInUpBig" id="contact_table">
+                    <tbody>
+                        {% for contact in page.contacts %}
+                        <tr>
+                            <td>{{ contact.type }}</td>
+                            <td>
+                                {% for val in contact.val %}
+                                {{ val }}<br/>
+                                {% endfor %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+    </div><!-- End of Content -->
+</div><!-- End of Grey Container -->

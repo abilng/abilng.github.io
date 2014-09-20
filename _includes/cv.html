@@ -1,0 +1,47 @@
+<!-- Start of White Container -->
+<div class="whitecontainer">
+
+    <!-- Start of Content -->
+    <div class="content" id="CV">
+
+        <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">curriculum vitae</h2>
+        
+        {% if page.edu %}
+        <div class="one_third clearfix wow fadeInUp" data-wow-offset="80" data-wow-duration="2s">
+            <h2>Education</h2>
+        </div>
+        {% for edu in page.edu %}
+        <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+            <h3>{{edu.degree}}</h3>
+            <h5>{{edu.university}}</h5>
+            <p class="small">{{edu.duration}}</p>
+            <div class="date">{{edu.date}}</div>
+            <!--<p></p>-->
+        </div><!-- End of 2/3 Column Last -->
+        {% endfor %}
+        {% endif %}
+
+        <div class="bigspace"></div>
+
+        {% if page.experience %}
+        <div class="one_third wow fadeInUp" data-wow-offset="80" data-wow-duration="2s">
+            <h2>Work Experience</h2>
+        </div>
+        {% for experience in page.experience %}
+        <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+            <h3>{{experience.title}}</h3>
+            <h5>{{experience.company}}</h5>
+            <p class="small">{{experience.duration}}</p>
+            <div class="date">{{experience.date}}</div>
+            <p>{{experience.desc}}</p>
+            {% if forloop.last %}
+            <a href="{{page.cvlink}}" class="button-reverse">Download My CV</a>
+            <a href="{{page.linkedin}}" class="button">LinkedIn Profile</a>
+            {% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+    </div><!-- End of Content -->
+    
+</div><!-- End of White Container -->

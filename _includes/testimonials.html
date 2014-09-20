@@ -1,0 +1,16 @@
+
+<!-- Start of Parallax 2 Container -->
+<div class="parallax2">
+    <!-- Start of Content -->
+    {% if page.testimonials %}
+    <div class="content shadow" id="Testimonials">
+        <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">Testimonials</h2>
+        <!-- Start of Owl Carousel -->
+        <div class="testimonials owl-carousel">
+            {% for testimonial in page.testimonials %}
+            <div><blockquote><p>{{testimonial.what}}</p><cite>{{testimonials.by}}</cite></blockquote></div>
+            {% endfor %}
+        </div><!-- End of Carousel -->
+    </div><!-- End of Content -->
+    {% endif %}
+</div><!-- End of Parallax 2 Container -->
