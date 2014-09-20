@@ -1,0 +1,19 @@
+<div class="whitecontainer">
+  
+  <!-- Start of Content -->
+  <div class="content" id="About">
+    
+    <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">About me</h2>
+    
+    <p itemprop="description" >{{page.intro}}</p>
+
+    {% if page.quote %}
+    <blockquote class="wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="3s">
+        <p>{{page.quote}}</p>
+    </blockquote>
+    {% endif %}
+    {% if page.signature %}
+    <img src="{{page.signature}}" width="250" alt="{{page.fullname}}">
+    {% endif %}
+  </div>
+</div>

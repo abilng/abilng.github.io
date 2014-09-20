@@ -1,37 +1,52 @@
-<!DOCTYPE HTML>
-<!--
-  Helios 1.5 by HTML5 UP
-  html5up.net | @n33co
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
-    <title>{{ site.title }} {% if page.title %}{{ page.title }}{% endif %}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    {% else %}
-    <meta name="description" content="{{ site.description }}" />
-    {% endif %}
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="abilngeorge abilng blog CET JNV IITM" />
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic" rel="stylesheet" type="text/css" />
-    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-    <script src="{{ relative }}/js/jquery.min.js"></script>
-    <script src="{{ relative }}/js/jquery.poptrox.min.js"></script>
-    <script src="{{ relative }}/js/jquery.dropotron.min.js"></script>
-    <script src="{{ relative }}/js/skel.min.js"></script>
-    <script src="{{ relative }}/js/init.js"></script>
-    <link rel="stylesheet" href="{{ relative }}/css/code.css" />
-    <noscript>
-      <link rel="stylesheet" href="{{ relative }}/css/skel-noscript.css" />
-      <link rel="stylesheet" href="{{ relative }}/css/style.css" />
-      <!--
-      
-      <link rel="stylesheet" href="{{ relative }}/css/style-desktop.css" />
-      <link rel="stylesheet" href="{{ relative }}/css/style-noscript.css" />
-      
-      -->
-    </noscript>
-    <!--[if lte IE 8]><link rel="stylesheet" href="{{ relative }}css/ie/v8.css" /><![endif]-->
-  </head>
-  
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}" />
+  {% else %}
+  <meta name="description" content="{{ site.description }}" />
+  {% endif %}
+  <meta name="keywords" content="abilngeorge abilng blog CET JNV IITM" />
+
+<meta name=”viewport” content=”width=1024, minimal-ui”>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+<title>{{ site.title }} {% if page.title %}{{ page.title }}{% endif %}</title>
+    
+<!-- Loading of stylesheet for the design -->
+<link href="{{ relative }}/css/main.css" rel="stylesheet" type="text/css" />
+    
+<!-- This tells the page to watch for special styling for IE9 -->
+<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
+
+<link rel="stylesheet" href="{{ relative }}/css/owl.carousel.css">
+<link rel="stylesheet" href="{{ relative }}/css/owl.theme.css">
+<link rel="stylesheet" href="{{ relative }}/css/fontello.css">
+<link rel="stylesheet" href="{{ relative }}/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="{{ relative }}/css/jquery.fs.wallpaper.css" type="text/css" media="all" />
+<link rel="stylesheet" href="{{ relative }}/css/animate.css">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+<!--Loading Scripts -->
+<!-- First we will load jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<!--Load Fallback if google not avalible-->
+<script>
+if (!window.jQuery) {
+    document.write('<script src="{{ relative }}/js/jquery-1.11.0.min.js"><\/script>');
+}
+</script>    
+<!-- Now we load the JS files for the fancy things on the page -->
+<script type="text/javascript" src="{{ relative }}/js/owl.carousel.js"></script>
+<script type="text/javascript" src="{{ relative }}/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="{{ relative }}/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript" src="{{ relative }}/js/retina.js"></script>
+<script type="text/javascript" src="{{ relative }}/js/jquery.scrollToTop.min.js"></script>
+<script type="text/javascript" src="{{ relative }}/js/jquery.fs.wallpaper.js"></script>
+<script type="text/javascript" src="{{ relative }}/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="{{ relative }}/js/jquery.plusanchor.js"></script>
+<script type="text/javascript" src="{{ relative }}/js/jquery.knob.js"></script>
+<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="{{ relative }}/js/app.js"></script>
+<script type="text/javascript" src="{{ relative }}/js/wow.min.js"></script>
+    
+</head>

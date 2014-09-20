@@ -5,137 +5,110 @@
 {% assign id = post.id %}
 {% assign date = post.date %}
 {% assign author = post.author %}
+{% assign title = post.title %}
+{% assign url = post.url %}
 {% else %}
 {% assign date = page.date %}
 {% assign author = page.author %}
 {% assign tags = page.tags %}
 {% assign id = page.id %}
+{% assign title = page.title %}
+{% assign url = page.url %}
 {% endif %}
 
+<!DOCTYPE HTML>
+<html>
 {% include header.html %}
-<body class="left-sidebar">
+<body id="top">
+{% assign blog = page.id %}
+{% include socialsection.html %}    
 
-  <!-- Header -->
-  <div id="header">
+{% include nav.html %}
+<!-- Start of Wrapper - the full width container -->
+<div class="wrapper">
+	<div class="container">
+		<!-- Title -->
+		<div class="parallax2">
+			<div class="content centered shadow" id="Astrolabos">
+				<h1 class="wow bounceInUp" data-wow-duration="2s">Astrolabos</h1>
+                    
+			</div><!-- End of Content -->
+        </div><!-- End of Parallax 2 Container -->
 
-    <!-- Inner -->
-    <div class="inner">
-      <header>
-	<h1><a href="#astrolabos"  class="scrolly" id="logo">Astrolabos</a></h1>
-      </header>
-    </div>
-    
-    <!-- Nav -->
-    {% include nav.html %}
-
-  </div>
   
   <!-- Main -->
-  <div class="wrapper style1">
-
-    <div class="container">
-      <div class="row">
-	<div class="4u" id="sidebar">
-	  <hr class="first" />
-	  <section>
-	    <header>
-	      <h3><a href="#">Latest Posts</a></h3>
-	    </header>
-	    <p>
-	    <ul itemscope itemtype="http://schema.org/Blog" >
-	      {% for post in site.posts %}
-      	      <li>
-      		<span>{{ post.date | date_to_string }}</span> &raquo;
-      		<a href="{{ post.url }}">{{ post.title }}</a>
-      	      </li>
-      	      {% if post.index > 20%}
-      	      {% break %}
-      	      {% endif %}
-    	      {% endfor %}
-    	</ul>
-	    </p>
-	    <footer>
-	      <a href="{{relative}}/archive.html" class="button">More..</a>
-	    </footer>
-	  </section>
-	  <hr />
-	</div>
-	<div class="8u skel-cell-important post" id="content">
-	  <article id="main" itemscope itemType="http://schema.org/BlogPosting">
-	    <header>
-	      {% if page.title %}
-    	      <h2 class="post-title"  itemprop="headline" ><a href="{{ root_url }}{{ page.url }}" itemprop="url" >{{ page.title }}</a></h2>
-	      {% endif %}
-	      {% if post.title %}
-	          <h2 class="post-title"  itemprop="headline" ><a itemprop="url" href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h2>
-	      {% endif %}
-	      <span class="byline"></span>
-	      <span>By:
-	      	<span itemprop="author"> 
-	      		<span itemscope itemtype="http://schema.org/Person">
-	      		<a rel="author" href="https://www.google.com/+AbilNGeorge" itemprop="name">{{ author }}</a></span>
-	      	</span>
-	      	<span style="float: right;" itemprop="datePublished" content="{{date}}">{{ date | date_to_string }} </span>
-	      </span>
-	      <span class="byline"></span>
-	    </header>
-	    <section  itemprop="articleBody" >
-	      {{ content }}
-	    </section>
-	    <section style="text-align:right;">
-	    <ul class="tags cf" itemprop="keywords">
-	    	{% for tag in tags %}
-      		<li><a href="/search.html?tags={{tag}} "> {{tag}}</a>
-      		</li>
-            {% endfor %}
-        </ul>
-
-	    </section>
-	  </article>
-	</div>
-      </div>
-      <hr />
-      <div class="row">
-	<div class="12u">
-	  <div id="disqus_thread" ></div>
-	  <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'abilng'; // required: replace example with your forum shortname
-            var disqus_identifier = '{{id}}';  //'a unique identifier for each page where Disqus is present';
+        <div class="smokecontainer">
+        	<div class="content">
+        		<div class="one_third" id="sidebar">
+        					<h2><a href="#">Latest Posts</a></h2>
+	    				<p>
+	    					<ul itemscope itemtype="http://schema.org/Blog" >
+	      						{% for post in site.posts %}
+      	      					<li>
+      							<span>{{ post.date | date_to_string }}</span> &raquo;
+      							<a href="{{ post.url }}">{{ post.title }}</a>
+      	      					</li>
+      	      					{% if post.index > 20%}
+      	      					{% break %}
+      	      					{% endif %}
+    	      					{% endfor %}
+    						</ul>
+	    				</p>
+	      					<a href="{{relative}}/archive.html" class="button">More..</a>
+	  				<hr />
+				</div>
+				<div class="two_third_last post" id="content">
+	  				<article id="main" itemscope itemType="http://schema.org/BlogPosting">
+    	      			<h2 class="post-title"  itemprop="headline" ><a href="{{ root_url }}{{ url }}" itemprop="url" >{{ title }}</a></h2>
+	      				<span class="byline"></span>
+	      				<span>By:
+	      					<span itemprop="author"> 
+	      						<span itemscope itemtype="http://schema.org/Person">
+	      							<a rel="author" href="https://www.google.com/+AbilNGeorge" itemprop="name">{{ author }}</a>
+	      						</span>
+	      					</span>
+	      					<span style="float: right;" itemprop="datePublished" content="{{date}}">{{ date | date_to_string }} </span>
+	      				</span>
+	      				<span class="byline"></span>
+	    				<div  itemprop="articleBody" >
+	    					{{ content }}
+	    				</div>
+	    				<div style="text-align:right;">
+	    					<ul class="tags cf" itemprop="keywords">
+	    						{% for tag in tags %}
+      							<li><a href="/search.html?tags={{tag}} "> {{tag}}</a></li>
+            					{% endfor %}
+        					</ul>
+	    				</div>
+	  				</article>
+				</div>
+      		</div>
+      	</div>
+         <div class="smokecontainer">
+        	<div class="content">
+	  			<div id="disqus_thread" ></div>
+	  			<script type="text/javascript">
+            		/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            		var disqus_shortname = 'abilng'; // required: replace example with your forum shortname
+            		var disqus_identifier = '{{id}}';  //'a unique identifier for each page where Disqus is present';
 	    
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-	  </script>
-	  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        		    /* * * DON'T EDIT BELOW THIS LINE * * */
+        		    (function() {
+        		    	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        		    	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        		    	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        			})();
+	  			</script>
+	  			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	  			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-	<div id="astrolabos"style="font-family: sans-serif; color: #a5b2b9; border-top: 2px solid rgba(173,173,173,0.5);">
-		An astrolabos is an elaborate inclinometer, historically used for locating and predicting the positions of the Sun, Moon, planets, and stars.
-	</div>
-
-	</div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div id="footer">
-    <div class="container">
-      <hr>
-      <div class="row">
-	<div class="12u">
-	  
-	  {% include footer.html %}			
-	  
-	</div>
-	
-      </div>
-    </div>
-  </div>
+				<div id="astrolabos" style="font-family: sans-serif; color: #a5b2b9; border-top: 2px solid rgba(173,173,173,0.5);">
+					An astrolabos is an elaborate inclinometer, historically used for locating and predicting the positions of the Sun, Moon, planets, and stars.
+				</div>
+			</div>
+		</div>
+    	{% include footer.html %}
+	</div><!-- End of Container -->
+</div><!-- End of Wrapper -->
 </body>
 </html>

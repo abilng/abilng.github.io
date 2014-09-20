@@ -1,119 +1,72 @@
+<!DOCTYPE HTML>
+<html>
 {% include header.html %}
-<body class="homepage">
-  <!-- Header -->
-  <section id="header">
-    <div class="inner">
-      <header>
-	     <p>Hi. I'm {{ page.user }}.</p>
-      </header>
-      
-      <footer>
-	     <a href="#banner" class="button style2 scrolly scrolly-centered">
-        Welcome to My Page
-      </a>
-      </footer>
-    </div>
-    
-    
-    <!-- Nav -->
-    {% include nav.html %}
-    
-  </section>
-  
-  <!-- Banner -->
-  <section id="banner">
-    <header>
-      <h2>About Me</h2>
-    </header>
-    <p>
-      {{ page.intro }}
-    </p>
-    <footer>
-      {% if page.features != null %}
-      <a href="#articles" class="button style2 scrolly">Learn more about me</a>
-      {% endif %}
-    </footer>
-  </section>
-  
-  <!-- Feature  -->
+<body id="top" itemscope itemtype="http://schema.org/Person">
 
- <!-- Feature -->
+{% include socialsection.html %}    
 
- <div id="articles" class="dummy"> </div>
-{% for article in page.features %}
-{% cycle  '<article class="container box style1 right">','<article class="container box style1 left">' %}
-    <a href="{{article.image_href}}" class="image full"><img src="{{article.image}}" alt="" /></a>
-    <div class="inner">
-      <header>
-        <h2>{{article.heading}}</h2>
-      </header>
-      <p>{{article.para}}</p>
-    </div>
-  </article>
-{% endfor %}
-  
-  
-  <!-- Portfolio -->
-  <div id="gallery" class="dummy"> </div>
-  <article class="container box style2">
-    <header>
-      <h2>Gallery</h2>
-      <p>Sorry ,I am adding contents to my pages</p>
-      <div class="inner gallery">
-	{% for img in page.gallery_images %}
-	{% cycle '<div class="row flush">',nill,nill,nill %} 
-	  <div class="3u">
-	    <a href="{{ relative }}/{{ img.full }}" class="image full">
-	      <img src="{{ relative }}/{{ img.thumbs }}" alt="{{ img.name }}" title="{{ img.name }}" />
-	    </a>
-	  </div>
-	{% cycle nill,nill,nill,'</div>' %} 
-	{% endfor %}
-	{% cycle 'nill,'</div>','</div>', '</div>' %}
-      </div>
-    <div>
-      <span style="text-align: right;float: right;"><a href="#">More...</a><a></a></span>
-    </div>
-   </header>
-  </article>
-
-  
-  <!-- Contact -->
-  <div id="contact" class="dummy"> </div>
-  <article  class="container box style3" itemprop="author" >
-  <div itemscope itemtype="http://schema.org/Person">
-  <meta itemprop="name" content="Abil N George" />
-  <meta itemprop="description" content="A master student of  Computer Science and Engineering in IIT Madras.
-  An alumnus of Computer Science and Engineering , Jawahar Navodaya Vidyalaya Vechoochira,Pathanamthitta" />
-  <meta itemprop="email" content="mail@abilng.in" /> 
-  <meta itemprop="url" content="http://www.abilng.in" />
-  </div>
-    <header>
-      <h2>Contact Me</h2>
-      <div class="table-wrapper">
-	<table class="default">
-	  <tbody>
-	    {% for contact in page.contacts %}
-	    <tr>
-	      <td>{{ contact.type }}:</td>
-	      <td>
-          	{% for val in contact.val %}
-          	{{ val }}<br/>
-          	{% endfor %}      
-              </td>
-	    </tr>
-	   {% endfor %}
-	  </tbody>
-	</table>
-      </div>
-    </header>
+{% include nav.html %}     
     
-  </article>
-		
-<div id="footer">
-{% include footer.html %}
-</div>
+<!-- TOP SECTION -->
+
+<!-- Start of Video Element -->
+<div id="video_element">
+
+    <!-- Start of Main Title + Intro -->
+    <div class="huge-title">
+
+        <img src="{{page.userImage}}" alt="{{page.user}}" class="headshot wow tada" data-wow-delay="3s" data-wow-offset="80" data-wow-duration="1s">
+        <h1 class="wow bounceInDown" data-wow-offset="80" data-wow-duration="3s">{{page.user}}</h1>
+
+        <!-- Start of Owl Testimonial Carousel -->
+        <div class="testimonials owl-carousel">
+            {% assign tags =  page.usertags|split:"," %}
+            {% for tag in tags %}
+            <div><!-- Start of Slide 1 -->
+                <div class="button-box"><h4>{{tag}}</h4></div>
+            </div>
+            {% endfor %}
+        </div><!-- End of Owl Testimonial Carousel -->
+
+    </div><!-- End of Main Title + Intro -->
+
+    <!-- Start of Scroll Down Message and animation -->
+    <div id="godown" class="floating">
+
+        <p><a href="#About">Learn more about {{page.user}}</a></p>
+        <img src="images/godown.png" alt="down"/>
+
+    </div><!-- End of Scroll Down Message and animation -->
+
+    <!-- Start of Shade - this is the css based gradient over the image for that cool effect -->
+    <div class="shade"></div><!-- End of Shade -->
+
+</div><!-- End of Video Element -->
+
+
+
+<!-- Start of Wrapper - the full width container -->
+<div class="wrapper">
+
+    <!-- Start of Container -->
+    <div class="container">
+        <!-- AT A GLANCE -->
+        {% include ataglance.html %} 
+        <!-- ABOUT SECTION -->    
+        {% include intro.html %} 
+        <!-- SKILLS SECTION -->
+        {% include skills.html %} 
+        <!-- CV / RESUME SECTION -->
+        {% include cv.html %}
+        <!-- TESTIMONIALS SECTION -->
+        {% include testimonials.html %} 
+        <!-- Gallery SECTION -->
+        {% include gallery.html %}
+        <!-- CONTACT SECTION -->
+        {% include contact.html %}
+
+        {% include footer.html %}
+	</div><!-- End of Container -->
+</div><!-- End of Wrapper -->
 </body>
 </html>
-
-		

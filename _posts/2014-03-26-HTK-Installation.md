@@ -10,7 +10,7 @@ category: blog
 The Hidden Markov Model Toolkit (HTK) is a portable toolkit for building and manipulating hidden Markov models. HTK is primarily used for speech recognition research.
 
 
-1.	HTK's licence requires you to [register](http://htk.eng.cam.ac.uk/register.shtml) before you can [download](http://htk.eng.cam.ac.uk/download.shtml) the toolkit.
+1. HTK's licence requires you to [register](http://htk.eng.cam.ac.uk/register.shtml) before you can [download](http://htk.eng.cam.ac.uk/download.shtml) the toolkit.
 
 2. Extract HTK-3.4.1.tar.gz {% highlight bash %}
 $ tar -xvzf HTK-3.4.1.tar.gz
@@ -20,24 +20,25 @@ $ tar -xvzf HTK-3.4.1.tar.gz
 $ cd HTK-*/
 {% endhighlight %}
 
- * If you have 32 bit system {% highlight bash %}
- $ ./configure --prefix=/opt/htk
- $ make all
- $ sudo make install
+> * If you have 32 bit system {% highlight bash %}
+$ ./configure --prefix=/opt/htk
+$ make all
+$ sudo make install
 {% endhighlight %}
 
- * If you have 64 bit system. {% highlight bash %}
+> * If you have 64 bit system. {% highlight bash %}
 #Install libc6-dev-i386 libx11-dev 
 $ sudo apt-get install libc6-dev-i386 libx11-dev
-#go to 32 bit terminal
-$ linux32 bash
+$ 
+$ linux32 bash #go to 32 bit terminal
 $ ./configure --prefix=/opt/htk
 $ make all
 $ sudo mkdir /opt/htk
 $ sudo make Install
 {% endhighlight %}
 
-4. Set '$PATH' {% highlight bash %}
- $ echo 'export PATH=$PATH:/opt/htk/' >> ~/.bashrc
+
+Remember to set path {% highlight bash %}
+$ echo 'export PATH=$PATH:/opt/htk/' >> ~/.bashrc
 {% endhighlight %}
 

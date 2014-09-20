@@ -1,36 +1,31 @@
-<nav id="nav">
-  <ul>
-    {% if page.path == "index.html" or page.path == "index.md" %}
-    <li><a href="#" class="scrolly scrolly-centered">Home</a></li>
-    <li><a href="#gallery" class="scrolly scrolly-centered">Gallery</a></li>
-    <li><a href="blog/" class="scrolly scrolly-centered">Blog</a></li>
-    <li><a href="#contact" class="scrolly scrolly-centered" >Contact</a></li>
-    {% else %}
-    <li><a href="{{ relative }}/index.html" class="scrolly scrolly-centered">Home</a></li>
-    <li><a href="{{ relative }}/index.html#gallery" class="scrolly scrolly-centered">Gallery</a></li>
-    <li><a href="{{ relative }}/blog/" class="scrolly scrolly-centered">Blog</a></li>
-    <li><a href="{{ relative }}/index.html#contact" class="scrolly scrolly-centered" >Contact</a></li>
-    {% endif %}
+<!-- HEADER SECTION -->
+<header>
 
-{% comment %}
-    <!-- <li>
-	 <span>Dropdown</span>
-	 <ul>
-	   <li><a href="#">Lorem ipsum dolor</a></li>
-	   <li><a href="#">Magna phasellus</a></li>
-	   <li><a href="#">Etiam dolore nisl</a></li>
-	   <li>
-	     <span>And a submenu &hellip;</span>
-	     <ul>
-	       <li><a href="#">Lorem ipsum dolor</a></li>
-	       <li><a href="#">Phasellus consequat</a></li>
-	       <li><a href="#">Magna phasellus</a></li>
-	       <li><a href="#">Etiam dolore nisl</a></li>
-	     </ul>
-	   </li>
-	   <li><a href="#">Veroeros feugiat</a></li>
-	 </ul>
-    </li> -->
-{% endcomment %}
-  </ul>
-</nav>
+    <!-- Start of Header Container - the content div that is a set width and centralized -->
+    <div class="header-container">
+        
+        <div id="menu" class="menu">
+            <div id="nav" class="nav">
+                <ul>
+                    {% if page.path == "index.html" or page.path == "index.md" %}
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="{{ relative }}/blog/">Astrolabos(Blog)</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#CV">CV / Resume</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                    {% else %}
+                    <li><a href="{{ relative }}/index.html#top">Home</a></li>
+                    <li><a href="{{ relative }}/blog/">Astrolabos(Blog)</a></li>
+                    <li><a href="{{ relative }}/index.html#Gallery">Gallery</a></li>
+                    <li><a href="{{ relative }}/index.html#Contact">Contact Me</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div id="menu-button"></div> 
+        </div>        
+
+    </div><!-- End of Header Container -->
+    
+</header>

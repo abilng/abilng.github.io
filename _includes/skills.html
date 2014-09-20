@@ -1,0 +1,27 @@
+<!-- Start of Parallax 1 Container -->
+{% if page.skills %}
+<div class="parallax1">
+    <!-- Start of Content -->
+    <div class="content" id="Skills">
+
+        <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">My Skills</h2>
+        <div class="half_column1 wow fadeInLeftBig" data-wow-offset="80" data-wow-duration="2s">
+
+            <p>{{page.skillsIntro}}</p>
+            <div class="button-box"><a href="#Contact" class="button">Contact Me</a></div>
+
+        </div>
+        
+        <div class="half_column2 wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+
+            {% for skill in page.skills %}
+
+            <div class="{% cycle 'one_third','one_third','one_third_last' %} centered skill">
+                <input class="knob" data-width="100%" data-fgColor="#ffffff" data-skin="cr3ativ" data-thickness=".2" value="{{skill.score}}" data-readOnly="true">
+                <h3>{{skill.name}}</h3>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
