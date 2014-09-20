@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 {% include header.html %}
-<body id="top">
+<body id="top" itemscope itemtype="http://data-vocabulary.org/Person">
 
 {% include socialsection.html %}    
 
@@ -13,7 +13,7 @@
 <div id="video_element">
 
     <!-- Start of Main Title + Intro -->
-    <div class="huge-title" itemscope itemtype="http://data-vocabulary.org/Person">
+    <div class="huge-title">
 
         <img src="{{page.userImage}}" alt="{{page.user}}" class="headshot wow tada" data-wow-delay="3s" data-wow-offset="80" data-wow-duration="1s" itemprop="photo"/>
         <h1 class="wow bounceInDown" data-wow-offset="80" data-wow-duration="3s" itemprop="nickname">{{page.user}}</h1>

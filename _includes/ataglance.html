@@ -1,5 +1,5 @@
 <!-- Start of Content - where the content be -->
-<div class="content2" itemscope itemtype="http://data-vocabulary.org/Person">
+<div class="content2">
   <!-- Start of Hero - The main top image like a phone etc -->
   <div class="hero">
     
@@ -19,6 +19,7 @@
     
     <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address" >
       <h4>RESIDENCE</h4><h5 itemprop="locality">{{page.address}}</h5>
+      <meta itemprop="addressCountry" content="{{page.country}}"/>
     </div>
     
     <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -28,8 +29,9 @@
     <div class="one_third_last wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.3s">
       <h4>HOBBIES</h4><h5>{{page.hobbies}}</h5>
     </div>
-    <meta itemprop="email" content="mail@abilng.in" /> 
-    <meta itemprop="url" content="http://www.abilng.in" />
+    <meta itemprop="email" content="{{site.mail}}" /> 
+    <meta itemprop="url" content="{{site.url}}" />
+    <meta itemprop="role" content="{{site.role}}" />
   </div><!-- End of Hero -->
   
 </div><!-- End of Content -->

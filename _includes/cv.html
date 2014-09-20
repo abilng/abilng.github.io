@@ -11,9 +11,9 @@
             <h2>Education</h2>
         </div>
         {% for edu in page.edu %}
-        <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+        <div itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization" class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
             <h3>{{edu.degree}}</h3>
-            <h5>{{edu.university}}</h5>
+            <h5 itemprop="name" >{{edu.university}}</h5>
             <p class="small">{{edu.duration}}</p>
             <div class="date">{{edu.date}}</div>
             <!--<p></p>-->
@@ -28,12 +28,12 @@
             <h2>Work Experience</h2>
         </div>
         {% for experience in page.experience %}
-        <div class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
-            <h3>{{experience.title}}</h3>
-            <h5>{{experience.company}}</h5>
+        <div  itemprop="worksFor" itemscope itemtype="http://schema.org/Organization" class="two_third_last wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
+            <h3 itemprop="jobTitle" >{{experience.title}}</h3>
+            <h5 itemprop="name" >{{experience.company}}</h5>
             <p class="small">{{experience.duration}}</p>
             <div class="date">{{experience.date}}</div>
-            <p>{{experience.desc}}</p>
+            <p itemprop="description" >{{experience.desc}}</p>
             {% if forloop.last %}
             <a href="{{page.cvlink}}" class="button-reverse">Download My CV</a>
             <a href="{{page.linkedin}}" class="button">LinkedIn Profile</a>
