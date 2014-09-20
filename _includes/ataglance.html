@@ -1,5 +1,5 @@
 <!-- Start of Content - where the content be -->
-<div class="content2">
+<div class="content2" itemscope itemtype="http://schema.org/Person">
   <!-- Start of Hero - The main top image like a phone etc -->
   <div class="hero">
     
@@ -14,11 +14,11 @@
     </div>
     
     <div class="one_third_last wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.3s">
-      <h4>BORN</h4><h5>{{page.DOB}}</h5>
+      <h4>BORN</h4><h5 itemprop="birthDate">{{page.DOB}}</h5>
     </div>
     
-    <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s">
-      <h4>RESIDENCE</h4><h5>{{page.address}}</h5>
+    <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address" >
+      <h4>RESIDENCE</h4><h5 itemprop="locality">{{page.address}}</h5>
     </div>
     
     <div class="one_third wow fadeInUp" data-wow-offset="120" data-wow-duration="1s" data-wow-delay="0.2s">
