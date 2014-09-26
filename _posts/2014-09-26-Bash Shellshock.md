@@ -39,7 +39,7 @@ This would allow arbitrary commands to be run, typically as root, on the DHCP cl
 * Various daemons and SUID/privileged programs may execute shell scripts with environment variable values 
 set / influenced by the user, which would allow for arbitrary commands to be run.
 
-*Any other application which is hooked onto a shell or runs a shell script as using Bash as the interpreter. 
+* Any other application which is hooked onto a shell or runs a shell script as using Bash as the interpreter. 
 Shell scripts which do not export variables are not vulnerable to this issue, even if they process untrusted content 
 and store it in (unexported) shell variables and open subshells.
 
