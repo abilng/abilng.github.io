@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Bash Shellshock"
-tags: Vulnerabilities bash, CVE-2014-6271, CVE-2014-7169, shellshocked
-date: 2014-09-26 10:41:25
+tags: Vulnerabilities bash CVE-2014-6271 CVE-2014-7169 shellshocked
+date: 2014-09-26 05:44:48
 author: Abil N George
 category: blog
 ---
