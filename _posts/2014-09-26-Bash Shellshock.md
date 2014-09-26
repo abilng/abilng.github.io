@@ -49,15 +49,18 @@ of these function definitions (inside the enivronment variable). Something like:
 
 {% highlight bash %}
 $ env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
- vulnerable
- this is a test
+vulnerable
+this is a test
 {% endhighlight %}
+
 The patch used to fix this flaw, ensures that no code is allowed after the end of a Bash function. 
 So if you run the above example with the patched version of Bash, you should get an output similar to:
-{% endhighlight %}
- $ env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
- bash: warning: x: ignoring function definition attempt
- bash: error importing function definition for `x'
- this is a test
+
+{% highlight bash %}
+$ env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
+bash: warning: x: ignoring function definition attempt
+bash: error importing function definition for `x'
+this is a test
 {% endhighlight %}.
+
 
