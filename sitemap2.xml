@@ -17,7 +17,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
 <!-- blog posts -->
 {% for post in site.posts %}
 <url>
-<loc>{{url}}{{ post.url }}</loc>
+<loc>{{baseurl}}{{ post.url }}</loc>
 {% if post.lastmod == null %}
 <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
 {% else %}
