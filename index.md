@@ -31,7 +31,7 @@ experience:
   - { title: "Software Development Engineer-Intern", company: "Amazon.com,Chennai", date: "2012-Summer", duration: "2 months ", desc: "Implemented an effective framework for automate testing of Kindle Direct Publishing (KDP) Web Interface." }
   - { title: RSMT Algorithm Implementation-Intern", company: "GES Infotek, Trivandrum", date: "2011-2012", duration: "Part Time", desc: "The Rectilinear Steiner Tree Problem (RSMT) asks for a minimum length tree that interconnects a given set of points by only horizontal and vertical line segments, enabling the use of extra points. Implemented FDP (Fast Dynamic Programming) Algorithm For RSMT by Ganley & Cohoon which is based on Hwang’s theorem. " }
 
-cvlink: "http://cdn.rawgit.com/abilng/Resume/moderncv/abil_resume.pdf"
+cvlink: "https://www.sharelatex.com/github/repos/abilng/Resume/builds/latest/output.pdf"
 linkedin: "http://in.linkedin.com/pub/abil-n-george/4b/21a/770/"
   
 gallery_images:
