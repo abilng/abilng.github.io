@@ -12,19 +12,19 @@ education: "B.Tech,M.Tech(Ongoing)"
 hobbies: "Reading,Being Wikipedian"
 usertags: "Software Developer,Computer Science Enthusiast,Navodayian,IITian"
 intro: |
-    I am currently a graduate student at the <a href="http://www.iitm.ac.in/‎">Indian Institute of Technology Madras</a>.I am doing masters in <a href="http://www.cse.iitm.ac.in/">Computer Science and Engineering</a>.I am interested in Machine Learning, and Algorithms & Data structures
+    I am currently woking in PayPal. I have done my masters in <a href="http://www.cse.iitm.ac.in/">Computer Science and Engineering</a> from <a href="http://www.iitm.ac.in/‎">Indian Institute of Technology Madras</a> and bachelors from College of Engineering, Trivandrum . I am interested in Machine Learning, and Algorithms & Data structures
 
 skillsIntro: "I Know Some Programming Languages.I am a keen learner with ability to learn and imbibe new knowledge.Hence able to easily adapt to changing work environment."
 skills:
-  - { name: "C/C++",score: "80" }
-  - { name: "Java",score: "60" }
-  - { name: "Python",score: "80" }
+  - { name: "C/C++",score: "90" }
+  - { name: "Java",score: "70" }
+  - { name: "Python",score: "85" }
   - { name: "HTML/CSS/JS",score: "50" }
   - { name: "Bash",score: "50"}
-  - { name: "Node.js",score: "40"}
+  - { name: "Node.js",score: "35"}
 
 edu:
-  - { degree: "Master of Technology", university: "IIT Madras", date: "2013-2015", duration: "2 yrs (Onging)" }
+  - { degree: "Master of Technology", university: "IIT Madras", date: "2013-2015", duration: "2 yrs" }
   - { degree: "Bachelor of Technology", university: "College of Engineering, Trivandrum (University of Kerala)", date: "2009-2013", duration: "4 yrs" }
 
 experience:
