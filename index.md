@@ -17,11 +17,11 @@ intro: |
 skillsIntro: "I Know Some Programming Languages.I am a keen learner with ability to learn and imbibe new knowledge.Hence able to easily adapt to changing work environment."
 skills:
   - { name: "C/C++",score: "90" }
-  - { name: "Java",score: "70" }
+  - { name: "Java",score: "90" }
   - { name: "Python",score: "85" }
-  - { name: "HTML/CSS/JS",score: "50" }
-  - { name: "Bash",score: "50"}
-  - { name: "Node.js",score: "35"}
+  - { name: "Node.js",score: "60" }
+  - { name: "Bash",score: "55"}
+  - { name: "HTML/CSS/JS",score: "55"}
 
 edu:
   - { degree: "Master of Technology", university: "IIT Madras", date: "2013-2015", duration: "2 yrs" }
