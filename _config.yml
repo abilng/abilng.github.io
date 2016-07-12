@@ -13,7 +13,8 @@ lsi: false
 highlighter: true
 markdown: redcarpet
 
-url: http://www.abilng.in
+url: https://www.abilng.in   # with the https protocol
+enforce_ssl: www.abilng.in   # without any protocol
 name: "Personal Site -Abil"
 author: "Abil N George"
 title: "Abil N George"
