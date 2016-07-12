@@ -10,7 +10,7 @@ IMAGE_PATH: /image/
 FONT_PATH: /fonts/
 lsi: false
 
-highlighter: true
+highlighter: rouge
 markdown: redcarpet
 
 url: https://www.abilng.in   # with the https protocol
@@ -27,16 +27,15 @@ links:
     github:
       link: "http://github.com/abilng"
       text: "abilng on GitHub"
-    twitter:  
+    twitter:
       link: "http://twitter.com/abilngeorge"
       text: "@abilngeorge on Twitter"
-    facebook:  
+    facebook:
       link: "http://facebook.com/abilngeorge"
       text: "abilngeorge on Facebook"
-    linkedin:  
+    linkedin:
       link: "http://in.linkedin.com/pub/abil-n-george/4b/21a/770"
       text: "abilngeorge on Linked-in"
-    google:  
+    google:
       link: "https://www.google.com/+AbilNGeorge"
       text: "abilngeorge on Google+"
-

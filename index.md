@@ -33,17 +33,19 @@ experience:
 
 cvlink: "https://www.sharelatex.com/github/repos/abilng/Resume/builds/latest/output.pdf"
 linkedin: "http://in.linkedin.com/pub/abil-n-george/4b/21a/770/"
-  
+
 gallery_images:
-  - { name: "test", desc: "images/thumbs/01.jpg", img: "images/fulls/01.jpg" }
-  - { name: "test", desc: "images/thumbs/02.jpg", img: "images/fulls/02.jpg" }
-  - { name: "test", desc: "images/thumbs/03.jpg", img: "images/fulls/03.jpg" }
-  - { name: "test", desc: "images/thumbs/04.jpg", img: "images/fulls/04.jpg" }
-  - { name: "test", desc: "images/thumbs/05.jpg", img: "images/fulls/05.jpg" }
-  - { name: "test", desc: "images/thumbs/06.jpg", img: "images/fulls/06.jpg" }
+  - { name: "Home", desc: "A photo from my home", img: "images/fulls/02.jpg", thumb: "images/thumbs/01.jpg" }
+#  - { name: "test", desc: "images/thumbs/02.jpg", img: "images/fulls/02.jpg", thumb: "images/thumbs/02.jpg" }
+  - { name: "test", desc: "images/thumbs/03.jpg", img: "images/fulls/03.jpg", thumb: "images/thumbs/03.jpg" }
+  - { name: "test", desc: "images/thumbs/04.jpg", img: "images/fulls/04.jpg", thumb: "images/thumbs/04.jpg" }
+  - { name: "test", desc: "images/thumbs/05.jpg", img: "images/fulls/05.jpg", thumb: "images/thumbs/05.jpg" }
+#  - { name: "test", desc: "images/thumbs/06.jpg", img: "images/fulls/06.jpg", thumb: "images/thumbs/06.jpg" }
+  - { name: "test", desc: "images/thumbs/07.jpg", img: "images/fulls/07.jpg", thumb: "images/thumbs/07.jpg" }
+  - { name: "test", desc: "images/thumbs/08.jpg", img: "images/fulls/08.jpg", thumb: "images/thumbs/08.jpg" }
 
 contacts:
-  - type: "Email" 
+  - type: "Email"
     val:
       - "<a href=\"mailto:mail@abilng.in\">mail@abilng.in</a>"
       - "<a href=\"mailto:abilng@cse.iitm.ac.in\">abilng@cse.iitm.ac.in</a>"

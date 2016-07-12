@@ -3,12 +3,15 @@
 <div class="whitecontainer">
     <div class="content" id="Gallery">
         <h2 class="border wow fadeInRightBig" data-wow-offset="80" data-wow-duration="2s">Gallery</h2>
-        <p>Sorry. Adding Contents..</p>
         <div class="center-align">
             {% for img in page.gallery_images %}
             <div class="{% cycle 'one_third','one_third_last','one_third' %} wow fadeInUpBig" data-wow-offset="80" data-wow-duration="2s">
                 <div class="infopanel">
-                    <a href="{{ relative }}/{{ img.img }}" class="fancybox" rel="group2" ><div class="eye"><img src="{{ relative }}/{{ img.img }}" alt="{{ img.name }}" /></div></a>
+                    <a href="{{ relative }}/{{ img.img }}" class="fancybox" rel="group2" >
+                      <div class="eye">
+                        <img src="{{ relative }}/{{ img.thumb }}" alt="{{ img.name }}" />
+                      </div>
+                    </a>
                     <h5>{{ img.name }} </h5>
                     <p>{{img.desc}}</p>
                 </div>
@@ -17,7 +20,5 @@
         </div>
 
     </div><!-- End of Content -->
-    
+
 </div><!-- End of White Container -->
-
-
