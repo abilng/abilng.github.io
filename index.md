@@ -4,13 +4,13 @@ description: ""
 user: "Abil N G"
 userImage: "images/headshot.jpg"
 fullname: "Abil Naithelloor George"
-bithplace: "Punalur,Kerala,India"
+bithplace: "Punalur, Kerala, India"
 DOB: "1991"
-address: "Kottarakara,Kerala"
+address: "Kottarakara, Kerala / Bangalore, Karnataka "
 country: "INDIA"
-education: "B.Tech,M.Tech(Ongoing)"
-hobbies: "Reading,Being Wikipedian"
-usertags: "Software Developer,Computer Science Enthusiast,Navodayian,IITian"
+education: "B.Tech, M.Tech"
+hobbies: "Reading, Being Wikipedian"
+usertags: "Software Developer, Computer Science Enthusiast, Navodayian, IITian"
 intro: |
     I am currently woking in PayPal. I have done my masters in <a href="http://www.cse.iitm.ac.in/">Computer Science and Engineering</a> from <a href="http://www.iitm.ac.in/‎">Indian Institute of Technology Madras</a> and bachelors from College of Engineering, Trivandrum . I am interested in Machine Learning, and Algorithms & Data structures
 
