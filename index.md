@@ -28,21 +28,22 @@ edu:
   - { degree: "Bachelor of Technology", university: "College of Engineering, Trivandrum (University of Kerala)", date: "2009-2013", duration: "4 yrs" }
 
 experience:
+  - { title: "Software Engineer 2", company: "PayPal, Bangalore", date: "July 2016 - ", duration: "", desc: "Working on Merchant Reporting Backend" }
+  - { title: "Software Engineer", company: "PayPal, Chennai/Bangalore", date: "July 2015 - May 2016", duration: "", desc: "Worked on Onboarding Backend APIs and Resolution Center Experience " }
   - { title: "Software Development Engineer-Intern", company: "Amazon.com,Chennai", date: "2012-Summer", duration: "2 months ", desc: "Implemented an effective framework for automate testing of Kindle Direct Publishing (KDP) Web Interface." }
-  - { title: RSMT Algorithm Implementation-Intern", company: "GES Infotek, Trivandrum", date: "2011-2012", duration: "Part Time", desc: "The Rectilinear Steiner Tree Problem (RSMT) asks for a minimum length tree that interconnects a given set of points by only horizontal and vertical line segments, enabling the use of extra points. Implemented FDP (Fast Dynamic Programming) Algorithm For RSMT by Ganley & Cohoon which is based on Hwang’s theorem. " }
 
-cvlink: "https://www.sharelatex.com/github/repos/abilng/Resume/builds/latest/output.pdf"
+cvlink: "https://drive.google.com/open?id=0B-gRGS0jvckyV1FlSllyRVlEMEE"
 linkedin: "http://in.linkedin.com/pub/abil-n-george/4b/21a/770/"
 
 gallery_images:
-  - { name: "Home", desc: "A photo from my home", img: "images/fulls/02.jpg", thumb: "images/thumbs/01.jpg" }
-#  - { name: "test", desc: "images/thumbs/02.jpg", img: "images/fulls/02.jpg", thumb: "images/thumbs/02.jpg" }
-  - { name: "test", desc: "images/thumbs/03.jpg", img: "images/fulls/03.jpg", thumb: "images/thumbs/03.jpg" }
-  - { name: "test", desc: "images/thumbs/04.jpg", img: "images/fulls/04.jpg", thumb: "images/thumbs/04.jpg" }
-  - { name: "test", desc: "images/thumbs/05.jpg", img: "images/fulls/05.jpg", thumb: "images/thumbs/05.jpg" }
-#  - { name: "test", desc: "images/thumbs/06.jpg", img: "images/fulls/06.jpg", thumb: "images/thumbs/06.jpg" }
-  - { name: "test", desc: "images/thumbs/07.jpg", img: "images/fulls/07.jpg", thumb: "images/thumbs/07.jpg" }
-  - { name: "test", desc: "images/thumbs/08.jpg", img: "images/fulls/08.jpg", thumb: "images/thumbs/08.jpg" }
+  - { name: "Home", desc: "A photo from my home", img: "images/fulls/01.jpg", thumb: "images/thumbs/01.jpg" }
+  #- { name: "Pichavaram", desc: "With Friends", img: "images/fulls/02.jpg", thumb: "images/thumbs/02.jpg" }
+  - { name: "Pichavaram", desc: "With Friends", img: "images/fulls/03.jpg", thumb: "images/thumbs/03.jpg" }
+  - { name: "Agra", desc: "With Friends", img: "images/fulls/04.jpg", thumb: "images/thumbs/04.jpg" }
+  - { name: "Chennai", desc: "With Friends", img: "images/fulls/05.jpg", thumb: "images/thumbs/05.jpg" }
+  - { name: "Delhi Trip", desc: "In front of Qutb Minar", img: "images/fulls/06.jpg", thumb: "images/thumbs/06.jpg" }
+  #- { name: "Delhi", desc: "In Qutb Minar", img: "images/fulls/07.jpg", thumb: "images/thumbs/07.jpg" }
+  - { name: "Delhi Trip", desc: "In front of Jantar Mantar", img: "images/fulls/08.jpg", thumb: "images/thumbs/08.jpg" }
 
 contacts:
   - type: "Email"
