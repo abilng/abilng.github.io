@@ -11,7 +11,7 @@ FONT_PATH: /fonts/
 lsi: false
 
 highlighter: rouge
-markdown: redcarpet
+markdown: kramdown
 
 url: https://www.abilng.in   # with the https protocol
 enforce_ssl: www.abilng.in   # without any protocol
