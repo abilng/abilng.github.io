@@ -28,7 +28,8 @@ edu:
   - { degree: "Bachelor of Technology", university: "College of Engineering, Trivandrum (University of Kerala)", date: "2009-2013", duration: "4 yrs" }
 
 experience:
-  - { title: "Software Engineer 2", company: "PayPal, Bangalore", date: "July 2016 - ", duration: "", desc: "Working on Merchant Reporting Backend" }
+  - { title: "Software Engineer 3", company: "PayPal, Bangalore", date: "March 2019 - ", duration: "", desc: "Working on Merchant Reporting Backend" }
+  - { title: "Software Engineer 2", company: "PayPal, Bangalore", date: "July 2016 - Feb 2019", duration: "", desc: "Worked as Full Stack Engineer in PayPal Merchnat Reporting" }
   - { title: "Software Engineer", company: "PayPal, Chennai/Bangalore", date: "July 2015 - May 2016", duration: "", desc: "Worked on Onboarding Backend APIs and Resolution Center Experience " }
   - { title: "Software Development Engineer-Intern", company: "Amazon.com,Chennai", date: "2012-Summer", duration: "2 months ", desc: "Implemented an effective framework for automate testing of Kindle Direct Publishing (KDP) Web Interface." }
 
@@ -49,7 +50,7 @@ contacts:
   - type: "Email"
     val:
       - "<a href=\"mailto:mail@abilng.in\">mail@abilng.in</a>"
-      - "<a href=\"mailto:abilng@cse.iitm.ac.in\">abilng@cse.iitm.ac.in</a>"
+      #- "<a href=\"mailto:abilng@cse.iitm.ac.in\">abilng@cse.iitm.ac.in</a>"
   - type: "GitHub"
     val:
       - "<a href=\"http://github.com/abilng\">abilng</a>"
